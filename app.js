@@ -11,8 +11,11 @@ app.io.route('drawClick', function (req) {
 });
 
 // Send client html.
-app.get('/', function (req, res) {
-    res.sendfile(__dirname + '/client.html')
+app.get('/teacher', function (req, res) {
+    res.sendfile(__dirname + '/teacher.html')
+});
+app.get('/student', function (req, res) {
+    res.sendfile(__dirname + '/student.html')
 });
 
 app.listen(7076);
